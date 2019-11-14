@@ -2,7 +2,6 @@
   "name": "focus",
   "version": "0.1.0",
   "license": "MIT",
-  "homepage": "https://burning1993.github.io/focus",
   "dependencies": {
     "@types/jest": "24.0.23",
     "@types/node": "12.12.7",
