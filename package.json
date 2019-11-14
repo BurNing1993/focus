@@ -1,5 +1,5 @@
 {
-  "name": "focus-helper",
+  "name": "focus",
   "version": "1.0.0",
   "description": "focus helper",
   "repository": {
@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/BurNing1993/focus/issues"
   },
-  "homepage": ".",
+  "homepage": "https://burning1993.github.io/focus",
   "dependencies": {
     "@types/jest": "24.0.23",
     "@types/node": "12.12.7",
