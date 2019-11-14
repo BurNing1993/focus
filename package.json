@@ -1,0 +1,53 @@
+{
+  "name": "focus-helper",
+  "version": "1.0.0",
+  "description": "focus helper",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BurNing1993/focus.git"
+  },
+  "keywords": [
+    "focus",
+    "helper"
+  ],
+  "author": "Joey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BurNing1993/focus/issues"
+  },
+  "homepage": "https://github.com/BurNing1993/focus#readme",
+  "dependencies": {
+    "@types/jest": "24.0.23",
+    "@types/node": "12.12.7",
+    "@types/react": "16.9.11",
+    "@types/react-dom": "16.9.4",
+    "antd": "^3.25.1",
+    "babel-plugin-import": "^1.12.2",
+    "customize-cra": "^0.8.0",
+    "react": "^16.11.0",
+    "react-app-rewired": "^2.1.5",
+    "react-dom": "^16.11.0",
+    "react-scripts": "3.2.0",
+    "typescript": "3.7.2"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
