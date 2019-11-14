@@ -1,6 +1,6 @@
 {
-  "short_name": "专注助手",
-  "name": "专注助手",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",
