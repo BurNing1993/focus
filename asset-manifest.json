@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/focus/static/css/main.dfca195d.chunk.css",
+    "main.js": "/focus/static/js/main.60db3b35.chunk.js",
+    "main.js.map": "/focus/static/js/main.60db3b35.chunk.js.map",
+    "runtime-main.js": "/focus/static/js/runtime-main.4fd70ff4.js",
+    "runtime-main.js.map": "/focus/static/js/runtime-main.4fd70ff4.js.map",
+    "static/js/2.3bc0be4c.chunk.js": "/focus/static/js/2.3bc0be4c.chunk.js",
+    "static/js/2.3bc0be4c.chunk.js.map": "/focus/static/js/2.3bc0be4c.chunk.js.map",
+    "index.html": "/focus/index.html",
+    "precache-manifest.861eabc136a168bf55b46ea1625afaa9.js": "/focus/precache-manifest.861eabc136a168bf55b46ea1625afaa9.js",
+    "service-worker.js": "/focus/service-worker.js",
+    "static/css/main.dfca195d.chunk.css.map": "/focus/static/css/main.dfca195d.chunk.css.map",
+    "static/media/logo.svg": "/focus/static/media/logo.25bf045c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4fd70ff4.js",
+    "static/js/2.3bc0be4c.chunk.js",
+    "static/css/main.dfca195d.chunk.css",
+    "static/js/main.60db3b35.chunk.js"
+  ]
+}
