@@ -1,0 +1,1 @@
+{"version":3,"sources":["App.css"],"names":[],"mappings":"AAEA,KACE,eAAgB,CAChB,aACF","file":"main.7a29a3c2.chunk.css","sourcesContent":["@import '~antd/dist/antd.css';\n\n#app{\n  max-width: 500px;\n  margin: 0 auto;\n}"]}
