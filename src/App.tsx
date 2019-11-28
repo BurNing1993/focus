@@ -1,14 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
+import { Provider } from 'react-redux';
+import store from './store'
+import Main from './Main'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <h1>专注助手</h1>
-      </div>
-    );
-  }
-}
+const App: React.FC = () => (
+  <Provider store={store} >
+    <Main />
+  </Provider>
+);
 
 export default App;

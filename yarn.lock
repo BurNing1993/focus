@@ -905,6 +905,13 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
+"@babel/runtime@^7.5.5":
+  version "7.7.4"
+  resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.7.4.tgz#b23a856751e4bf099262f867767889c0e3fe175b"
+  integrity sha512-r24eVUUr0QqNZa+qrImUk8fn5SPhHq+IfYvIoIMg0do3GdK9sMdiLKP3GYVVaxpPKORgm8KRKaNTEhAjgIpLMw==
+  dependencies:
+    regenerator-runtime "^0.13.2"
+
 "@babel/template@^7.4.0", "@babel/template@^7.6.0", "@babel/template@^7.7.0":
   version "7.7.0"
   resolved "https://registry.npmjs.org/@babel/template/-/template-7.7.0.tgz#4fadc1b8e734d97f56de39c77de76f2562e597d0"
@@ -1290,6 +1297,14 @@
   resolved "https://registry.npmjs.org/@types/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#1ee30d79544ca84d68d4b3cdb0af4f205663dd2d"
   integrity sha512-OCutwjDZ4aFS6PB1UZ988C4YgwlBHJd6wCeQqaLdmadZ/7e+w79+hbMUFC1QXDNCmdyoRfAFdm0RypzwR+Qpag==
 
+"@types/hoist-non-react-statics@^3.3.0":
+  version "3.3.1"
+  resolved "https://registry.npmjs.org/@types/hoist-non-react-statics/-/hoist-non-react-statics-3.3.1.tgz#1124aafe5118cb591977aeb1ceaaed1070eb039f"
+  integrity sha512-iMIqiko6ooLrTh1joXodJK5X9xeEALT1kM5G3ZLhD3hszxBdIEd5C75U834D9mLcINgD4OyZf5uQXjkuYydWvA==
+  dependencies:
+    "@types/react" "*"
+    hoist-non-react-statics "^3.3.0"
+
 "@types/istanbul-lib-coverage@*", "@types/istanbul-lib-coverage@^2.0.0":
   version "2.0.1"
   resolved "https://registry.npmjs.org/@types/istanbul-lib-coverage/-/istanbul-lib-coverage-2.0.1.tgz#42995b446db9a48a11a07ec083499a860e9138ff"
@@ -1343,6 +1358,16 @@
   integrity sha512-fya9xteU/n90tda0s+FtN5Ym4tbgxpq/hb/Af24dvs6uYnYn+fspaxw5USlw0R8apDNwxsqumdRoCoKitckQqw==
   dependencies:
     "@types/react" "*"
+
+"@types/react-redux@^7.1.5":
+  version "7.1.5"
+  resolved "https://registry.npmjs.org/@types/react-redux/-/react-redux-7.1.5.tgz#c7a528d538969250347aa53c52241051cf886bd3"
+  integrity sha512-ZoNGQMDxh5ENY7PzU7MVonxDzS1l/EWiy8nUhDqxFqUZn4ovboCyvk4Djf68x6COb7vhGTKjyjxHxtFdAA5sUA==
+  dependencies:
+    "@types/hoist-non-react-statics" "^3.3.0"
+    "@types/react" "*"
+    hoist-non-react-statics "^3.3.0"
+    redux "^4.0.0"
 
 "@types/react-slick@^0.23.4":
   version "0.23.4"
@@ -1727,10 +1752,10 @@ ansi-styles@^3.2.0, ansi-styles@^3.2.1:
   dependencies:
     color-convert "^1.9.0"
 
-antd@^3.25.1:
-  version "3.25.1"
-  resolved "https://registry.npmjs.org/antd/-/antd-3.25.1.tgz#c23732e63fc01fed30d9ab708e9ef4e71527ed82"
-  integrity sha512-/ZbialgXQJaWh0gKM+tdpMMnew/sTclJGqq3JeY0GtENHgh7gBzPFs3R1F118lsyvDbM99JXfEnXKgSoVsOflg==
+antd@^3.25.3:
+  version "3.25.3"
+  resolved "https://registry.npmjs.org/antd/-/antd-3.25.3.tgz#284cbf83cf5ab6c26dffb6066576f202ea60af50"
+  integrity sha512-qTegXllFsswzfSUyZHS8hebfUSqJ7uriDRcbE4Iwsa+/+IioHwDqha8cSzdbqrUqdjnozVV2vFDiGvRrI5fwEA==
   dependencies:
     "@ant-design/create-react-context" "^0.2.4"
     "@ant-design/icons" "~2.1.1"
@@ -1771,7 +1796,7 @@ antd@^3.25.1:
     rc-steps "~3.5.0"
     rc-switch "~1.9.0"
     rc-table "~6.9.4"
-    rc-tabs "~9.6.4"
+    rc-tabs "~9.7.0"
     rc-time-picker "~3.7.1"
     rc-tooltip "~3.7.3"
     rc-tree "~2.1.0"
@@ -8485,9 +8510,9 @@ rc-animate@^3.0.0-rc.1:
     react-lifecycles-compat "^3.0.4"
 
 rc-calendar@~9.15.5:
-  version "9.15.7"
-  resolved "https://registry.npmjs.org/rc-calendar/-/rc-calendar-9.15.7.tgz#b3dfc0ffb7aecc6dba5b6a2ebb516eb44908a5bd"
-  integrity sha512-DpZYkgA6QhxrSzypC/gc0kW6AgtyT8NOwhLPNtmN+K3ZnXem7DCclLievMlpuA1X/R4ljDPVkiCfUaK2Hfccjw==
+  version "9.15.8"
+  resolved "https://registry.npmjs.org/rc-calendar/-/rc-calendar-9.15.8.tgz#6a3dbc2716c5297b46c8442dc2c748a17346111d"
+  integrity sha512-x3zVaZSRX7FkRNKw7nz3tutwrlIrU1aqMn5GtRUmlf84GnXLtd9fuuydxeNkFWfcHry3BPSto7+r9TK2al0h+g==
   dependencies:
     babel-runtime "6.x"
     classnames "2.x"
@@ -8591,9 +8616,9 @@ rc-editor-mention@^1.1.13:
     rc-editor-core "~0.8.3"
 
 rc-form@^2.4.10:
-  version "2.4.10"
-  resolved "https://registry.npmjs.org/rc-form/-/rc-form-2.4.10.tgz#8bf7260a4c9a1d5b82621cee5f82d8daa4ecb84e"
-  integrity sha512-h6a5Nvn6fMe3BfLpIWwL2RUkfXs1tvtifblTgGgH0UfzGgiQ5M12jiMJaAXek7TDDBUw90/c5vlZ6wFZjW0IgQ==
+  version "2.4.11"
+  resolved "https://registry.npmjs.org/rc-form/-/rc-form-2.4.11.tgz#61ee3ae579259684ae30f2c48f55f0f23a5d3d08"
+  integrity sha512-8BL+FNlFLTOY/A5X6tU35GQJLSIpsmqpwn/tFAYQTczXc4dMJ33ggtH248Cum8+LS0jLTsJKG2L4Qp+1CkY+sA==
   dependencies:
     async-validator "~1.11.3"
     babel-runtime "6.x"
@@ -8764,10 +8789,10 @@ rc-table@~6.9.4:
     react-lifecycles-compat "^3.0.2"
     shallowequal "^1.0.2"
 
-rc-tabs@~9.6.4:
-  version "9.6.7"
-  resolved "https://registry.npmjs.org/rc-tabs/-/rc-tabs-9.6.7.tgz#c546115a351f5ed779ea5524143157f48ee0c015"
-  integrity sha512-OXbDOgaqv2MGK9QaDi6cdva6bNz3XGw+M9BHQpm1gTGmVQEGx5VcclDClH/3xobIzooxy8hrxg/s0rTlgDnC2w==
+rc-tabs@~9.7.0:
+  version "9.7.0"
+  resolved "https://registry.npmjs.org/rc-tabs/-/rc-tabs-9.7.0.tgz#ae09695bef5963d6e64e7bc10521c76dfdd8448b"
+  integrity sha512-kvmgp8/MfLzFZ06hWHignqomFQ5nF7BqKr5O1FfhE4VKsGrep52YSF/1MvS5oe0NPcI9XGNS2p751C5v6cYDpQ==
   dependencies:
     "@ant-design/create-react-context" "^0.2.4"
     babel-runtime "6.x"
@@ -8872,9 +8897,9 @@ rc-trigger@^3.0.0-rc.2:
     rc-util "^4.4.0"
 
 rc-upload@~2.9.1:
-  version "2.9.2"
-  resolved "https://registry.npmjs.org/rc-upload/-/rc-upload-2.9.2.tgz#bf9f16f2458a9a07def00234a6618307406ac7dd"
-  integrity sha512-USjuWpTRJl3my32G5woysTaGrAld+S4dvvZ9kW6RX/RkekfmLDjvWc5ho8Mj/+6B6/tDRJnyGyvMxMQNkW7cvw==
+  version "2.9.3"
+  resolved "https://registry.npmjs.org/rc-upload/-/rc-upload-2.9.3.tgz#2dc1c39250159d348ec7afc7c88bff7164d9c128"
+  integrity sha512-d4pThCff5vriqb2nPnEIoW2HnYgZ5aLtlNmSLGRnpQHWeXeIN/c3SzpEbA4uSj+PjX2T9ye9Utd0iLnWFhIDuQ==
   dependencies:
     babel-runtime "6.x"
     classnames "^2.2.5"
@@ -8882,9 +8907,9 @@ rc-upload@~2.9.1:
     warning "4.x"
 
 rc-util@^4.0.4, rc-util@^4.1.1, rc-util@^4.10.0, rc-util@^4.11.2, rc-util@^4.13.0, rc-util@^4.15.3, rc-util@^4.3.0, rc-util@^4.4.0, rc-util@^4.5.0, rc-util@^4.5.1, rc-util@^4.6.0, rc-util@^4.8.1:
-  version "4.15.6"
-  resolved "https://registry.npmjs.org/rc-util/-/rc-util-4.15.6.tgz#cd36c82b44504052df054f991846820073a57ee0"
-  integrity sha512-W6HB1gIn+xZLxmQfLkhMnAtaZY9RktcOH2I0Tbam4D4ZDFrkO33f3M7IolN0EPtLMpf4Mv/dEQNclY77/PtBpg==
+  version "4.15.7"
+  resolved "https://registry.npmjs.org/rc-util/-/rc-util-4.15.7.tgz#8380b05765952d08dd9fdb836e19dda437cceab7"
+  integrity sha512-9pn2NU7IafaP0Hbtll7Ufu9eF9odDOMGMI/WD9lgD4yrm3xR4yCAWZ0cqQGIhKMqdkg3I7et7/dTekrftMeqJQ==
   dependencies:
     add-dom-event-listener "^1.1.0"
     babel-runtime "6.x"
@@ -8967,7 +8992,7 @@ react-error-overlay@^6.0.3:
   resolved "https://registry.npmjs.org/react-error-overlay/-/react-error-overlay-6.0.3.tgz#c378c4b0a21e88b2e159a3e62b2f531fd63bf60d"
   integrity sha512-bOUvMWFQVk5oz8Ded9Xb7WVdEi3QGLC8tH7HmYP0Fdp4Bn3qw0tRFmr5TW6mvahzvmrK4a6bqWGfCevBflP+Xw==
 
-react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.4:
+react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.4, react-is@^16.9.0:
   version "16.12.0"
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.12.0.tgz#2cc0fe0fba742d97fd527c42a13bec4eeb06241c"
   integrity sha512-rPCkf/mWBtKc97aLL9/txD8DZdemK0vkA3JMLShjlJB3Pj3s+lpf1KaBzMfQrAmhMQB0n1cU/SUGgKKBCe837Q==
@@ -8986,6 +9011,18 @@ react-lifecycles-compat@^3.0.2, react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://registry.npmjs.org/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
+
+react-redux@^7.1.3:
+  version "7.1.3"
+  resolved "https://registry.npmjs.org/react-redux/-/react-redux-7.1.3.tgz#717a3d7bbe3a1b2d535c94885ce04cdc5a33fc79"
+  integrity sha512-uI1wca+ECG9RoVkWQFF4jDMqmaw0/qnvaSvOoL/GA4dNxf6LoV8sUAcNDvE5NWKs4hFpn0t6wswNQnY3f7HT3w==
+  dependencies:
+    "@babel/runtime" "^7.5.5"
+    hoist-non-react-statics "^3.3.0"
+    invariant "^2.2.4"
+    loose-envify "^1.4.0"
+    prop-types "^15.7.2"
+    react-is "^16.9.0"
 
 react-scripts@3.2.0:
   version "3.2.0"
@@ -9146,6 +9183,14 @@ recursive-readdir@2.2.2:
   integrity sha512-nRCcW9Sj7NuZwa2XvH9co8NPeXUBhZP7CRKJtU+cS6PW9FpCIFoI5ib0NT1ZrbNuPoRy0ylyCaUL8Gih4LSyFg==
   dependencies:
     minimatch "3.0.4"
+
+redux@^4.0.0, redux@^4.0.4:
+  version "4.0.4"
+  resolved "https://registry.npmjs.org/redux/-/redux-4.0.4.tgz#4ee1aeb164b63d6a1bcc57ae4aa0b6e6fa7a3796"
+  integrity sha512-vKv4WdiJxOWKxK0yRoaK3Y4pxxB0ilzVx6dszU2W8wLxlb2yikRph4iV/ymtdJ6ZxpBLFbyrxklnT5yBbQSl3Q==
+  dependencies:
+    loose-envify "^1.4.0"
+    symbol-observable "^1.2.0"
 
 regenerate-unicode-properties@^8.1.0:
   version "8.1.0"
@@ -10233,6 +10278,11 @@ svgo@^1.0.0, svgo@^1.2.2:
     stable "^0.1.8"
     unquote "~1.1.1"
     util.promisify "~1.0.0"
+
+symbol-observable@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.npmjs.org/symbol-observable/-/symbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
+  integrity sha512-e900nM8RRtGhlV36KGEU9k65K3mPb1WV70OdjfxlG2EAuM1noi/E/BaW/uMhL7bPEssK8QV57vN3esixjUvcXQ==
 
 symbol-tree@^3.2.2:
   version "3.2.4"
