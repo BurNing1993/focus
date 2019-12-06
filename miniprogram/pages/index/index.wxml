@@ -1,9 +1,16 @@
 <!--miniprogram/pages/index.wxml-->
-<view class="section">
+<!-- <view class="section">
   <view class="section__title">普通选择器</view>
   <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
     <view class="picker">
       当前选择：{{array[index]}}
     </view>
   </picker>
+</view> -->
+<view class="container">
+  <view class="header">
+    <view class="bar">
+      <text>专注-Focus</text>
+    </view>
+  </view>
 </view>

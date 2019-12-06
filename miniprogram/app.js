@@ -13,8 +13,18 @@ App({
         // env: 'my-env-id',
         traceUser: true,
       })
+      
     }
 
     this.globalData = {}
-  }
+  },
+   onShow(options) {
+     console.log(options)
+  },
+  onHide() {
+    console.log('onHide')
+  },
+  onError(msg) {
+    console.log(msg)
+  },
 })
