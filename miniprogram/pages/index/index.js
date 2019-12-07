@@ -5,20 +5,95 @@ Page({
    * 页面的初始数据
    */
   data: {
-    array: ['美国', '中国', '巴西', '日本'],
-    avatarUrl:'',
-    userInfo:''
+    dialogShow: false,
+    buttons: [{
+      text: '取消'
+    }, {
+      text: '确定'
+    }],
+    index: 1,
+    minutes: 30,
+    timeArray: [{
+        label: '20分钟',
+        value: 20
+      },
+      {
+        label: '30分钟',
+        value: 30
+      },
+      {
+        label: '40分钟',
+        value: 40
+      },
+      {
+        label: '60分钟',
+        value: 60
+      },
+    ],
+    avatarUrl: '',
+    userInfo: ''
   },
-  bindPickerChange: function (e) {
-    console.log('picker发送选择改变，携带值为', e.detail.value)
+  tapDialogButton(e) {
+    const index = e.detail.index
     this.setData({
-      index: e.detail.value
+      dialogShow: false,
+    })
+    if (index === 1) {
+      wx.navigateTo({
+        url: '/pages/focus/index',
+        events: {
+          // 为指定事件添加一个监听器，获取被打开页面传送到当前页面的数据
+          acceptDataFromOpenedPage: function(data) {
+            console.log(data)
+          },
+          someEvent: function(data) {
+            console.log(data)
+          }
+        },
+        success: function(res) {
+          // 通过eventChannel向被打开页面传送数据
+          res.eventChannel.emit('acceptDataFromOpenerPage', {
+            data: 'test'
+          })
+        }
+      })
+    }
+  },
+  openConfirm: function() {
+    this.setData({
+      dialogShow: true
+    })
+  },
+  bindPickerChange: function(e) {
+    this.setData({
+      index: e.detail.value,
+    })
+  },
+  route(e) {
+    const url = e.target.dataset.url;
+    wx.navigateTo({
+      url,
+      events: {
+        // 为指定事件添加一个监听器，获取被打开页面传送到当前页面的数据
+        acceptDataFromOpenedPage: function(data) {
+          console.log(data)
+        },
+        someEvent: function(data) {
+          console.log(data)
+        }
+      },
+      success: function(res) {
+        // 通过eventChannel向被打开页面传送数据
+        res.eventChannel.emit('acceptDataFromOpenerPage', {
+          data: 'test'
+        })
+      }
     })
   },
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function () {
+  onLoad: function() {
     if (!wx.cloud) {
       wx.redirectTo({
         url: '../chooseLib/chooseLib',
@@ -47,49 +122,49 @@ Page({
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function () {
+  onReady: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {
+  onShow: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function () {
+  onHide: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function () {
+  onUnload: function() {
 
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function () {
+  onPullDownRefresh: function() {
 
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function () {
+  onReachBottom: function() {
 
   },
 
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
+  onShareAppMessage: function() {
 
   }
 })

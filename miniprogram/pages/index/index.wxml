@@ -10,7 +10,38 @@
 <view class="container">
   <view class="header">
     <view class="bar">
-      <text>专注-Focus</text>
+      <text class="title">专注-Focus</text>
+      <view class="tools">
+        <mp-icon icon="album" color="black" size="{{25}}" data-url="/pages/record/index" bindtap="route"></mp-icon>
+        <mp-icon icon="discover" color="black" size="{{25}}" data-url="/pages/history/index" bindtap="route"></mp-icon>
+        <mp-icon icon="setting" color="black" size="{{25}}" data-url="/pages/setting/index" bindtap="route"></mp-icon>
+      </view>
     </view>
+  </view>
+  <view class="main">
+    <view>
+      <text>暂别手机</text>
+    </view>
+    <view>
+      <text>享受生活</text>
+    </view>
+    <view>
+      <text>让下一个{{timeArray[index].value}}分钟意义非凡</text>
+    </view>
+    <view class="select">
+      <picker bindchange="bindPickerChange" value="{{index}}" range-key="label" range="{{timeArray}}" data-minutes="{{timeArray[index].value}}">
+        <view class="picker">
+          {{timeArray[index].label}}
+        </view>
+      </picker>
+      <view>3</view>
+    </view>
+
+
+    <button type="primary" plain bindtap="primary"   bindtap="openConfirm"> 开 始 </button>
+
+    <mp-dialog title="你好挑战者!" show="{{dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{buttons}}">
+      <view>你好挑战者!</view>
+    </mp-dialog>
   </view>
 </view>

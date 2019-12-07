@@ -1,7 +1,7 @@
 //app.js
 App({
   onLaunch: function () {
-    
+
     if (!wx.cloud) {
       console.error('请使用 2.2.3 或以上的基础库以使用云能力')
     } else {
@@ -13,18 +13,16 @@ App({
         // env: 'my-env-id',
         traceUser: true,
       })
-      
+
     }
 
     this.globalData = {}
   },
-   onShow(options) {
-     console.log(options)
+  onShow(options) {
   },
   onHide() {
-    console.log('onHide')
+    console.log('onHide' + new Date())
   },
   onError(msg) {
-    console.log(msg)
   },
 })
