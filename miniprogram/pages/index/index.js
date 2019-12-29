@@ -31,13 +31,14 @@ Page({
       },
     ],
     avatarUrl: '',
-    userInfo: ''
+    userInfo: '',
   },
   tapDialogButton(e) {
     const index = e.detail.index
     this.setData({
       dialogShow: false,
     })
+    getApp().globalData.time = this.data.timeArray[this.data.index].value
     if (index === 1) {
       wx.navigateTo({
         url: '/pages/focus/index',
@@ -93,7 +94,7 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function() {
+  onLoad: function (option) {
     if (!wx.cloud) {
       wx.redirectTo({
         url: '../chooseLib/chooseLib',
@@ -108,13 +109,23 @@ Page({
           // 已经授权，可以直接调用 getUserInfo 获取头像昵称，不会弹框
           wx.getUserInfo({
             success: res => {
+              console.log(res)
               this.setData({
                 avatarUrl: res.userInfo.avatarUrl,
-                userInfo: res.userInfo
+                userInfo: res.userInfo,
               })
             }
           })
         }
+      }
+    })
+    const eventChannel = this.getOpenerEventChannel()
+    eventChannel.emit('acceptDataFromOpenedPage', { data: 'test' });
+    eventChannel.emit('someEvent', { data: 'test' });
+    // 监听acceptDataFromOpenerPage事件，获取上一页面通过eventChannel传送到当前页面的数据
+    eventChannel.on('acceptDataFromOpenerPage', function (data) {
+      if(data.success){
+        console.log('挑战成功!')
       }
     })
   },

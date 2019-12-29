@@ -1,2 +1,2 @@
 <!--miniprogram/pages/focus/index.wxml-->
-<text>miniprogram/pages/focus/index.wxml</text>
+<text>{{timeStr}}</text>

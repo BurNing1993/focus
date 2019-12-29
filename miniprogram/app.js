@@ -16,7 +16,9 @@ App({
 
     }
 
-    this.globalData = {}
+    this.globalData = {
+      time:30
+    }
   },
   onShow(options) {
   },

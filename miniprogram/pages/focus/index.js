@@ -1,18 +1,65 @@
 // miniprogram/pages/focus/index.js
+import { getMinutes } from '../../utils/index.js'
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    num:5,
+    timeStr:'30min00s'
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    wx.setScreenBrightness({
+      value: 0,
+      success: () => { console.log('setScreenBrightness success') },
+      fail: () => { console.log('setScreenBrightness fail') }
+    })
+    wx.setKeepScreenOn({
+      keepScreenOn: true
+    })
+    // const time = getApp().globalData.time;
+    // this.setData({
+    //   num : time * 60,
+    //   timeStr : getMinutes(time * 60)
+    // })
+    const timer=setInterval(()=>{
+      const num = this.data.num - 1
+      const timeStr = getMinutes(num)
+      console.log(timeStr)
+      if (timeStr){
+        
+        this.setData({
+          num,
+          timeStr
+        })
+      }else{
+        clearInterval(timer);
+        wx.navigateTo({
+          url: '/pages/index/index',
+          events: {
+            // 为指定事件添加一个监听器，获取被打开页面传送到当前页面的数据
+            acceptDataFromOpenedPage: function (data) {
+              console.log(data)
+            },
+            someEvent: function (data) {
+              console.log(data)
+            }
+          },
+          success: function (res) {
+            // 通过eventChannel向被打开页面传送数据
+            res.eventChannel.emit('acceptDataFromOpenerPage', {
+              success:true
+            })
+          }
+        })
+      }
+    },1000)
   },
 
   /**
